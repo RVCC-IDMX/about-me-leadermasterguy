@@ -13,6 +13,18 @@ h6 {
   font-family: 'Cinzel Decorative', cursive;
   color: #f9ff47;
   font-size: 38pt;
+  text-shadow: 2px 2px black;
+}
+
+p {
+  text-shadow: 1px 1px black;
+}
+
+li {
+  text-shadow: 1px 1px black;
+}
+figcaption {
+  text-shadow: 2px 2px black;
 }
 
 h2 {
@@ -27,13 +39,24 @@ header img {
 
 #hero img {
   width: 400px;
+  max-width: 75%;
 }
 
 #hero {
   color: #faff61;
   background-color: #9900ff;
-  border: 3px solid black;
-  font-size: 25pt;
+  border: 4px solid black;
+  border-radius: 30px;
+  font-size: 26pt;
+  min-width: 30%;
+  max-width: 100%;
+  margin-left: 75px;
+  margin-right: 75px;
+
+  box-shadow: 14px 14px 6px rgba(0, 0, 0, 0.3);
+}
+
+#hero p {
 }
 
 /* bio */
@@ -44,24 +67,50 @@ header img {
 }
 
 /* hobbies */
+#hobbies {
+  text-align: center;
+}
+
+#hobbies li {
+  color: #aeb320;
+  font-size: 24pt;
+}
 
 /* gallery */
 
 #gallery {
-  /*e*/
 }
 
 #gallery img {
   max-width: 100%;
+  border: 10px double black;
+  background-color: #be78ff;
+  border-radius: 15px;
+  box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.3);
 }
 
 #gallery figure {
+  color: #faff61;
+  font-size: 25pt;
   text-align: center;
+}
+
+/* lit */
+#lit {
+  padding-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+#lit p {
+  color: #aeb320;
+  font-size: 18pt;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 /* footer */
 footer {
   text-align: left;
   background-color: #be78ff;
-  border: 3px solid black;
+  border: 4px solid black;
 }
