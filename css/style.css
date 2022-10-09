@@ -1,23 +1,41 @@
-body{
-    font-family:'Manrope', sans-serif;
-    background-color:#5F00B8;
-    text-align:center;
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #5f00b8;
+  text-align: center;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family:'Cinzel Decorative', cursive;
-    font-size:30pt;
-    text-align:center;
-    color:#F9FF47;
-    font-size:32pt;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #f9ff47;
+  font-size: 32pt;
 }
 
-p{
-    color:#FAFF61;
-    font-size:20pt;
+header img {
+  width: 100px;
 }
 
-footer{
-text-align:left;
-background-color:#BE78FF;
+#hero img {
+  width: 400px;
+}
+
+#hero {
+  color: #faff61;
+  background-color: #9900ff;
+  border: 3px solid black;
+  font-size: 25pt;
+}
+#bio {
+  color: #aeb320;
+  font-size: 18pt;
+}
+
+footer {
+  text-align: left;
+  background-color: #be78ff;
+  border: 3px solid black;
 }
