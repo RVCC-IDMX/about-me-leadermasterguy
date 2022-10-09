@@ -12,12 +12,18 @@ h5,
 h6 {
   font-family: 'Cinzel Decorative', cursive;
   color: #f9ff47;
-  font-size: 32pt;
+  font-size: 38pt;
+}
+
+h2 {
+  font-size: 28pt;
 }
 
 header img {
   width: 100px;
 }
+
+/* hero */
 
 #hero img {
   width: 400px;
@@ -29,11 +35,31 @@ header img {
   border: 3px solid black;
   font-size: 25pt;
 }
+
+/* bio */
+
 #bio {
   color: #aeb320;
   font-size: 18pt;
 }
 
+/* hobbies */
+
+/* gallery */
+
+#gallery {
+  /*e*/
+}
+
+#gallery img {
+  max-width: 100%;
+}
+
+#gallery figure {
+  text-align: center;
+}
+
+/* footer */
 footer {
   text-align: left;
   background-color: #be78ff;
