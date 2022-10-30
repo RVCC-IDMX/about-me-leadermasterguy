@@ -97,10 +97,34 @@ header img {
   text-align: center;
 }
 
+/* video  */
+
+#video .vidwrapper {
+position:relative;
+padding-bottom:56.25%;
+padding-top:25px;
+height:0px;
+} 
+
+#video .vidwrapper iframe{
+  position:absolute;
+  left:0px;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  height:60%;
+  width:60%;
+  border: 10px double black;
+  background-color: #be78ff;
+  border-radius: 15px;
+  box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.3);
+
+}
+
 /* lit */
 #lit {
   padding-bottom: 100px;
-  margin-top: 200px;
+  margin-top: 50px;
   margin-bottom: 150px;
 }
 #lit p {
