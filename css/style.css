@@ -136,7 +136,24 @@ height:0px;
 
 /* contact form */
 #formElements{
+  text-align:left;
   display:grid;
+  color: #aeb320;
+  font-size: 18pt;
+  text-shadow: 1px 1px black;
+  row-gap:.5em;
+}
+legend{
+  color: #faff61;
+  font-size: 28pt;
+  text-shadow: 2px 2px black;
+}
+fieldset{
+  border: 2px solid black;
+}
+#contact {
+  padding:1rem;
+  max-width:90%;
 }
 
 
@@ -144,7 +161,7 @@ height:0px;
 footer {
   text-align: left;
   background-color: #be78ff;
-  border: 4px solid black;
+  border: 2px solid black;
 }
 
 @media screen and (min-width: 60em) {
