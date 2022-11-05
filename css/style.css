@@ -134,6 +134,12 @@ height:0px;
   padding-right: 60px;
 }
 
+/* contact form */
+#formElements{
+  display:grid;
+}
+
+
 /* footer */
 footer {
   text-align: left;
