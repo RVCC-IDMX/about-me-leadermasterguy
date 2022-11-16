@@ -72,6 +72,11 @@ main {
     text-decoration:none;
 }
 
+.navbar-links a:hover,
+.navbar-links a:focus {
+    filter:invert(1);
+    border-radius: 10px;
+}
 
 
 /* 
