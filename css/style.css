@@ -9,14 +9,22 @@ body {
 }
 h1,
 h2,
-h3,
+h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #f9ff47;
+  font-size:3rem;
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
 h4,
 h5,
 h6 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
   color: #f9ff47;
-  font-size:2.5rem;
-  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+  font-size:1.9rem;
+  text-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.45);
+
 }
 
 
@@ -74,9 +82,17 @@ font-size:1.75rem;
   font-size: 2rem;
   text-align: center;
 }
-#img-1:hover {
-  scale:300%;
+#img-1:hover,
+#img-2:hover,
+#img-3:hover
+ {
+  scale:105%;
 }
+#gallery figcaption{
+    font-weight: bold;
+    color: #f9ff47;
+}
+
 
 
 
@@ -161,11 +177,12 @@ footer a:focus {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    text-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.45);
     margin-left: 1rem;
   }
   #lit div{
     max-width: 100%;
-    columns: 20rem;
+    columns: 40rem;
   }
     #hero img {
   width: 30rem;
