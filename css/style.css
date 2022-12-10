@@ -74,6 +74,9 @@ font-size:1.75rem;
   font-size: 2rem;
   text-align: center;
 }
+#img-1:hover {
+  scale:300%;
+}
 
 
 
