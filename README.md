@@ -15,40 +15,38 @@ In making the Bio, and Lit(replaced by Blog) sections, I learned basic text styl
 ## Project Color Scheme
 The website primarily uses a purple and yellow color scheme, with black used as an accent.
 Purple and yellow are complimentary colors, which allows for proper contrast, and I quite like black+purple and black+yellow aesthetically.
-*IMAGE OF COLOR SCHEME*
 
+![about-me-colors](https://user-images.githubusercontent.com/30780494/206877771-d9509784-da71-4f83-9b0a-cb43aa561a79.png)
 The colors labeled as A and B are used for text, with A being for headers and other important text, while B is for 'normal' text(like in the Bio, Hobbies, and Blog sections). C is the primary background color, while D is used to outline certain elements. Color E is used only for the footer. Color F, which is a pure black, is used to outline elements, shadow text, and for the footer text(on the lighter purple, light yellow doesn't show up very well, and darker yellows aren't to my liking). G is a lighter black used for the navbar background. I is a slightly lighter yellow that is used for the navbar links, and hamburger menu.
 H and A are the colors present in the logo.
 
-#### Example Photo
-*IMAGE OF WEBSITE*
-
+### Example Photo
+![website-colors](https://user-images.githubusercontent.com/30780494/206877779-6d0a79bc-0129-4bbf-a22b-cc5770ce1d9a.JPG)
 
 
 ## Citations
 
-#### Fonts
-Cinzel Decorative
-Manrope
-Lobster
+### Fonts
+Cinzel Decorative\
+Manrope\
+Lobster\
 https://www.1001fonts.com
 
-#### Hamburger Menu
+### Hamburger Menu
 Based on Code: https://codepen.io/angeladelise/pen/poErPMY
 
-#### Logo Creation/Image Manipulation
+### Logo Creation/Image Manipulation
 https://www.figma.com
 https://www.favicon-generator.org/
 https://squoosh.app/
 
-#### Image Hover Effects Resources
+### Image Hover Effects Resources
 https://www.w3schools.com/CSSref/sel_hover.php
 https://www.simplilearn.com/tutorials/css-tutorial/css-hover-effects
 https://www.lambdatest.com/blog/css-hover-effects/
 
 
 ## Copyright
-I grant complete and free of charge permission for any person to modify, copy, or distribute this software.
-
-https://creativecommons.org/licenses/by/4.0/
+![copyright](https://user-images.githubusercontent.com/30780494/206877831-cb68ee7d-0c3e-4ba2-bc7b-5563d83e03a2.png)\
+https://creativecommons.org/licenses/by/4.0/ \
 ©2022 - Nicholas Trilone
