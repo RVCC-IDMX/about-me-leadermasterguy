@@ -1,9 +1,12 @@
+/* body */
 body {
   font-family: 'Manrope', sans-serif;
   background-color: #5f00b8;
+  color:#fcffb2;
   text-align: center;
+  font-size:1.25rem;
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
 }
-
 h1,
 h2,
 h3,
@@ -12,188 +15,177 @@ h5,
 h6 {
   font-family: 'Cinzel Decorative', cursive;
   color: #f9ff47;
-  font-size: 38pt;
-  text-shadow: 2px 2px black;
+  font-size:2.5rem;
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
-p {
-  text-shadow: 1px 1px black;
-}
 
-li {
-  text-shadow: 1px 1px black;
-}
-figcaption {
-  text-shadow: 2px 2px black;
-}
 
-h2 {
-  font-size: 28pt;
-}
-
-header img {
-  width: 100px;
-}
 
 /* hero */
+#hero {
+  background-color: #9900ff;
+  border: 0.3rem solid black;
+  border-radius: 3rem;
+  font-size: 2rem;
+  min-width: 30%;
+  max-width: 100%;
 
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+}
 #hero img {
-  width: 400px;
+  width: 40rem;
   max-width: 75%;
 }
 
-#hero {
-  color: #faff61;
-  background-color: #9900ff;
-  border: 4px solid black;
-  border-radius: 30px;
-  font-size: 26pt;
-  min-width: 30%;
-  max-width: 100%;
-  margin-left: 75px;
-  margin-right: 75px;
 
-  box-shadow: 14px 14px 6px rgba(0, 0, 0, 0.3);
-}
 
-#hero p {
-}
 
 /* bio */
-
 #bio {
-  color: #aeb320;
-  font-size: 18pt;
+  margin-top:4rem;
+  margin-bottom:8rem;
 }
+#bio p {
+font-size:1.75rem;
+}
+
+
 
 /* hobbies */
 #hobbies {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom:8rem;
+}
+#hobbies li {
+font-size:1.75rem;
 }
 
-#hobbies li {
-  color: #aeb320;
-  font-size: 24pt;
-}
+
 
 /* gallery */
-
-#gallery {
-}
-
 #gallery img {
   max-width: 100%;
-  border: 10px double black;
+  border: 0.6rem double black;
   background-color: #be78ff;
-  border-radius: 15px;
-  box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
-
 #gallery figure {
-  color: #faff61;
-  font-size: 25pt;
+  font-size: 2rem;
   text-align: center;
 }
 
-/* video  */
 
+
+/* video */
 #video .vidwrapper {
 position:relative;
 padding-bottom:56.25%;
-padding-top:25px;
+padding-top:0px;
 height:0px;
 } 
-
 #video .vidwrapper iframe{
   position:absolute;
-  left:0px;
+  left:2.5%;
   top:0px;
   right:0px;
   bottom:0px;
-  height:85%;
-  width:85%;
-  border: 10px double black;
+  height:90%;
+  width:90%;
+  border: 0.6rem double black;
   background-color: #be78ff;
-  border-radius: 15px;
-  box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.3);
-
+  border-radius: 3rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-/* lit */
+
+
+/* blog(previously lit) */
 #lit {
-  padding-bottom: 100px;
-  margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom:8rem;
 }
-#lit p {
-  color: #aeb320;
-  font-size: 18pt;
-  padding-left: 60px;
-  padding-right: 60px;
-}
+
+
 
 /* contact form */
-#formElements{
+#contact {
+  margin-bottom:8rem;
+}
+#formElements {
   text-align:left;
   display:grid;
-  color: #aeb320;
-  font-size: 18pt;
-  text-shadow: 1px 1px black;
   row-gap:.5em;
 }
-/*
-legend{
-  color: #faff61;
-  font-size: 28pt;
-  text-shadow: 2px 2px black;
+#contact legend {
+    font-size: 2rem;
+    color: #f9ff47;
 }
-fieldset{
-  border: 2px solid black;
-}
-#contact {
-  padding:1rem;
-  max-width:90%;
-}
-*/
+
 
 
 /* footer */
 footer {
+  color:black;
   text-align: left;
   background-color: #be78ff;
-  border: 2px solid black;
+  border: 0.15rem solid black;
+}
+footer a {
+    color:black;
+}
+footer a:hover,
+footer a:focus {
+    filter:invert(1);
+    border-radius: 10px;
 }
 
+
+
+
+
+
+
+
+
+/* media state: 60 em(tablet) */
 @media screen and (min-width: 60em) {
-  figure {
-    display: grid;
+  figure{
+    display:grid;
     grid-template-columns: 2fr 1fr;
   }
-  figcaption {
-    display: flex;
+  figcaption{
+    display:flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     margin-left: 1rem;
   }
-  #lit div {
+  #lit div{
     max-width: 100%;
-    columns: 40rem;
+    columns: 20rem;
+  }
+    #hero img {
+  width: 30rem;
   }
 }
 
+/* media state: 100 em(laptop/pc) */
 @media screen and (min-width: 100em) {
-  #photos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    min-width: 100%;
-  }
-  h2 {
-    grid-column: 1/-1;
-  }
-  hr {
-    display: none;
-  }
+#hero{
+  margin-left: 5rem;
+  margin-right: 5rem;
+  border: 0.4rem solid black;
+}
+#photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-width: 100%;
+}
+h2 {
+  grid-column: 1/-1;
+}
+
+#video .vidwrapper iframe{
+  scale:80%;
+}
 }

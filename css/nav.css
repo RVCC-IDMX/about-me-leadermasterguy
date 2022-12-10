@@ -25,12 +25,13 @@ main {
 /* navbar */
 
 .navbar {
-    background-color: #be78ff;
+    background-color: #111;
     display:flex;
     flex-direction: column;
     font-size:2rem;
     margin-bottom: 0.5rem;
     padding: 1rem;
+    align-items: center;
 }
 
 /* logo */
@@ -41,16 +42,21 @@ main {
 }
 
 .logo img{
-    height:7vw;
-    width: 7vw;
+    height:4rem;
+    width: 4rem;
+    padding-right:1rem;
+    padding-bottom: 1rem;
 }
 
 .logo h1 {
-    font-size: 1.8em;
+    font-size: 1.2em;
+    padding-right:4rem;
+    color: #f9ff47;
 }
 
 
 /* navigation list */
+
 
 .navbar-links li {
     list-style: none;
@@ -67,7 +73,7 @@ main {
 .navbar-links a {
     color:#faff61;
     background-attachment: #be78ff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1rem 1.25rem;
     letter-spacing: 2px;
     text-decoration:none;
@@ -80,6 +86,59 @@ main {
 }
 
 
+/*
+hamburger menu on mobile view
+based on Code by Angela Delise:  
+https://codepen.io/angeladelise/pen/poErPMY
+*/
+
+.navbar{
+}
+
+.navbar-links{
+    display:none;
+}
+
+.navbar-toggle{
+    position:absolute;
+    cursor:pointer;
+    right:0;
+}
+
+.navbar svg{
+    fill: #faff61;
+    scale:40%;
+}
+
+.close{
+    display:none;
+}
+
+.navbar-checkbox{
+    display:none;
+}
+
+.menu {
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+#navbar-checkbox:checked ~ ul.navbar-links{
+  display: block;
+}
+
+#navbar-checkbox:checked ~ label.navbar-toggle .close{
+    display:block;
+}
+
+#navbar-checkbox:checked ~ label.navbar-toggle .menu {
+    display:none;
+}
+
+
+
+
 /* 
 media query for non-mobile nav bar
 min-width set to width of nav elements 
@@ -87,7 +146,7 @@ such that no text wraps
 */
 
 @media screen and (min-width: 60rem) {
-    .navbnar-links {
+    .navbar-links {
         display:flex;
         justify-content: space-between;
     }
@@ -101,4 +160,32 @@ such that no text wraps
         display:flex;
         justify-content: space-between; 
     }
+
+    .logo h1 {
+    font-size: 1.8em;
+    }
+
+    .navbar-links a {
+    font-size: 2rem;
+    }
+
+    .logo img{
+    height:8rem;
+    width: 8rem;
+    padding-right:3rem;
+    }
+
+/*
+disable hamburger menu on larger screens
+*/
+
+    .nav-toggle{
+        display:none;
+    }
+
+    .close,
+    .menu {
+        display:none;
+    }
+
 }
