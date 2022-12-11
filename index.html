@@ -107,15 +107,15 @@
         <h2>Photo Gallery</h2> <hr />
         <section id="photos">
           <figure>
-            <img src="img/lizzy-picture-640w.jpg" alt="Female Gray Cat" id="img-1"/>
+            <img src="img/lizzy-picture-640w.jpg" alt="Female Gray Cat" class="cat-hover"/>
             <figcaption>Lizzy</figcaption>
           </figure>
           <figure>
-            <img src="img/casper-picture-640w.jpg" alt="Male Gray Cat" id="img-2" />
+            <img src="img/casper-picture-640w.jpg" alt="Male Gray Cat" class="cat-hover"/>
             <figcaption>Casper</figcaption>
           </figure>
           <figure>
-            <img src="img/oreo-picture-640w.jpg" alt="Male Black Cat" id="img-3" />
+            <img src="img/oreo-picture-640w.jpg" alt="Male Black Cat" class="cat-hover"/>
             <figcaption>Oreo</figcaption>
           </figure>
         </section> <hr />
@@ -134,52 +134,51 @@
         <h2>What Are Image Hover Effects?</h2>
         <div>
           <p>
-            "Lucy dear, do you know why I tell you all this? It is not only
-            because it is all sweet to me, but because you have been, and are,
-            very dear to me. It was my privilege to be your friend and guide
-            when you came from the schoolroom to prepare for the world of life.
-            I want you to see now, and with the eyes of a very happy wife,
-            whither duty has led me; so that in your own married life you too
-            may be all happy as I am. My dear, please Almighty God, your life
-            may be all it promises: a long day of sunshine, with no harsh wind,
-            no forgetting duty, no distrust. I must not wish you no pain, for
-            that can never be; but I do hope you will be always as happy as I am
-            now. Good-bye, my dear. I shall post this at once, and, perhaps,
-            write you very soon again. I must stop, for Jonathan is waking--I
-            must attend to my husband! "Oceans of love and millions of kisses,
-            and may you soon be in your own home with your husband. I wish you
-            could be coming home soon enough to stay with us here. The strong
-            air would soon restore Jonathan; it has quite restored me. I have an
-            appetite like a cormorant, am full of life, and sleep well. You will
-            be glad to know that I have quite given up walking in my sleep. I
-            think I have not stirred out of my bed for a week, that is when I
-            once got into it at night. Arthur says I am getting fat. By the way,
-            I forgot to tell you that Arthur is here. We have such walks and
-            drives, and rides, and rowing, and tennis, and fishing together; and
-            I love him more than ever. He tells me that he loves me more, but I
-            doubt that, for at first he told me that he couldn't love me more
-            than he did then. But this is nonsense. There he is, calling to me.
-            So no more just at present from your loving
+            Image hover effects are specific css effects that are added to elements via the ':hover' selector. In simpler terms, it allows for dynamic changes in a website when a certain image is hovered over.
+            For a very basic examples, you can look at the images in "Gallery", which grow in size slightly when hovered over(when on desktop view). Just as the ':hover' selector can be used to modify text when its hovered
+            over, images work in the same way.
           </p>
           <p>
-            20 August.--The case of Renfield grows even more interesting. He has
-            now so far quieted that there are spells of cessation from his
-            passion. For the first week after his attack he was perpetually
-            violent. Then one night, just as the moon rose, he grew quiet, and
-            kept murmuring to himself: "Now I can wait; now I can wait." The
-            attendant came to tell me, so I ran down at once to have a look at
-            him. He was still in the strait-waistcoat and in the padded room,
-            but the suffused look had gone from his face, and his eyes had
-            something of their old pleading--I might almost say,
-            "cringing"--softness. I was satisfied with his present condition,
-            and directed him to be relieved. The attendants hesitated, but
-            finally carried out my wishes without protest. It was a strange
-            thing that the patient had humour enough to see their distrust, for,
-            coming close to me, he said in a whisper, all the while looking
-            furtively at them:--
+            When applying the hover image effects to my Gallery, I tried to apply the knowledge I had of text hover effects(from the links in the Navbar and Footer), with a high level of success. I marked the specific
+            image elements with a particular class within my html, then applied css changes to that class, given the ':hover' selector. I simply changed the scale of the image slightly(105%) when the images are hovered
+            over to give a small amount of user feedback.
           </p>
+          <p>
+            Image hover effects are a relatively easy way to add interactivity and responsiveness to a website without(necessarily) vastly changing its function. They can vary from very minor cosmetic effects, to
+            complex animations, to function-relevant changes. Although there is always a risk of overdoing it, adding image hover events to a website effectively can vastly improve it, both in terms of cosmetics and
+            functionality.
+          </p>
+          <p>
+            Because of the simplicity that the initial implementation held, I decided to look into more interesting effects to apply to the images. I looked into image filters(which include brightness, sepia,
+            contrast, hue, and blurs), as well as image transformations(which include translations, rotations, skews, and scaling).
+          </p>
+          <p>
+            Below this Blog is three yellow squares that can be hovered over to produce effects. Tapping/Clicking the boxes will also produce the same effect, for those who are on devices that cannot hover over an image.
+            The first one becomes partially transparent when hovered over, utilizing the opacity filter. In reality, because of the simplicity of the example, the square just becomes a light purple
+            color(as yellow being partially opaque on top of purple makes a lighter purple). The second square is skewed along both the X-axis, and the Y-axis when hovered over, which vastly changes its shape. Finally,
+            the third box is simply rotated 45 degrees when hovered over.
+          </p>
+          <p>
+            The only issues I ran into when attempting to implement these effects were unexpected behaviors with the 'matrix' transformation. This transformation is a combination of scale, skew, and translate, on both the
+            X-axis and Y-axis, meaning that it takes in 6 values. Because the order of these parameters aren't entirely intuitive(scaleX, skewY, skewX, scaleY, translateX, translateY), when experimenting, I often found myself
+            misplacing values, leading to a number of strange effects. Once, by mistakingly setting scaleY to 0, I discovered that the square would rapidly flash when hovering over it. Hovering over the box would cause it to
+            disappear(because its scaleY = 0), which would mean that it is no longer being hovered over, causing it to go back to normal, before starting the loop again. A similar, although less extreme version of this can
+            be observed when hovering over the second square's top right or bottom left corners, as the skew effect changes the bounds of the box.
+          </p>
+          <p>
+            Even these image hover effects are only scratching the surface, as animations and effect timings can be created through css, allowing for an extreme level of creative expression, beyond simple filters, transformations,
+            and style changes.
+          </p>
+
+
         </div>
       </article>
+      <!--Image Hover Effect Examples-->
+      <section id="hover-photos">
+        <img src="img/Box.png" alt="Yellow Box That Becomes Transparent When Hovered Over" id="box-hover-1"/>
+        <img src="img/Box.png" alt="Yellow Box That Becomes Skewed When Hovered Over" id="box-hover-2"/>
+        <img src="img/Box.png" alt="Box That Rotates When Hovered Over" id="box-hover-3"/>
+      </section>
 
       <!--Contact: Contact Form-->
       <section id="contact">
