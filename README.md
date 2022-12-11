@@ -1,6 +1,6 @@
-# About Me Website
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d9a4e02e-f465-4450-9aff-9952e192643f/deploy-status)](https://app.netlify.com/sites/about-me-leadermasterguy/deploys)
-
+# About Me Website 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d9a4e02e-f465-4450-9aff-9952e192643f/deploy-status)](https://app.netlify.com/sites/about-me-leadermasterguy/deploys) \
+![lobster-nat](https://user-images.githubusercontent.com/30780494/206919568-a696d29b-b121-41e0-843a-97d2c7a20ec9.svg)
 
 ## Intro
 My name is Nicholas Trilone, and this website was created as part of my Web Dev 1 class(built throughout the class, and submitted as a final). 
