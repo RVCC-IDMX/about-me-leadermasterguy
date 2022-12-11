@@ -36,9 +36,9 @@ https://www.1001fonts.com
 Based on Code: https://codepen.io/angeladelise/pen/poErPMY
 
 ### Logo Creation/Image Manipulation
-https://www.figma.com
-https://www.favicon-generator.org/
-https://squoosh.app/
+https://www.figma.com \
+https://www.favicon-generator.org/ \
+https://squoosh.app/ \
 https://color.adobe.com/create/color-wheel
 
 ### Image Hover Effects Resources
@@ -47,7 +47,7 @@ https://www.w3schools.com/cssref/css3_pr_transform.php \
 https://www.w3schools.com/Css/css3_2dtransforms.asp \
 https://www.w3schools.com/cssref/css3_pr_filter.php \
 https://www.simplilearn.com/tutorials/css-tutorial/css-hover-effects \
-https://www.lambdatest.com/blog/css-hover-effects/ \
+https://www.lambdatest.com/blog/css-hover-effects/
 
 ## Copyright
 ![copyright](https://user-images.githubusercontent.com/30780494/206877831-cb68ee7d-0c3e-4ba2-bc7b-5563d83e03a2.png)\
